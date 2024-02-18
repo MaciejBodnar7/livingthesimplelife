@@ -67,11 +67,13 @@ h1 {
 }
 
 .article-read-more:hover,
-.article-read-more:focus,
-a:hover,
-a:focus {
+.article-read-more:focus {
   color: #143774;
   text-decoration: underline;
+}
+
+.article-info {
+  margin: 2em 0;
 }
 
 /* ====================
@@ -86,20 +88,14 @@ a:focus {
 
 .container-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 header {
   background: #f8f8f8;
   padding: 2em 0;
-}
-
-main {
-  width: 75%;
-}
-
-aside {
-  width: 20%;
+  text-align: center;
 }
 
 /* navigation */
@@ -108,11 +104,12 @@ nav ul {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 nav li {
-  margin: 0 0 0 2em;
+  margin: 0.5em 0;
 }
 
 nav a {
@@ -137,42 +134,39 @@ nav a:focus {
   color: #707070;
 }
 
-/* ====================
-  mediaqueries
-  =================== */
-
-@media (max-width: 675px) {
+@media (min-width: 675px) {
   .container-flex {
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
   }
-  .site-title {
-    margin: 0 auto;
+
+  main {
+    width: 75%;
   }
-  .subtitle {
-    text-align: center;
-  }
-  nav li {
-    margin: 0 1em;
+
+  aside {
+    width: 20%;
   }
 }
 
-@media (max-width: 400px) {
-  .container-flex {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .site-title {
-    margin: 0 auto;
-  }
-  .subtitle {
-    text-align: center;
-  }
-  nav li {
-    margin: 0.75em 0;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+/* ====================
+  Articles
+  =================== */
+
+article {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-read-secondary {
+  order: 1;
 }
