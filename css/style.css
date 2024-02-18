@@ -12,7 +12,9 @@ body {
 }
 
 img {
-  width: 20em;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 strong {
@@ -82,7 +84,7 @@ a:focus {
   margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
   justify-content: space-between;
 }
@@ -90,6 +92,14 @@ a:focus {
 header {
   background: #f8f8f8;
   padding: 2em 0;
+}
+
+main {
+  width: 75%;
+}
+
+aside {
+  width: 20%;
 }
 
 /* navigation */
@@ -132,7 +142,7 @@ nav a:focus {
   =================== */
 
 @media (max-width: 675px) {
-  .container-nav {
+  .container-flex {
     justify-content: center;
     flex-direction: column;
   }
@@ -148,7 +158,7 @@ nav a:focus {
 }
 
 @media (max-width: 400px) {
-  .container-nav {
+  .container-flex {
     justify-content: center;
     flex-direction: column;
   }
