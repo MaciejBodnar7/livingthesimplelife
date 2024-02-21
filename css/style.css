@@ -15,7 +15,6 @@ img {
   max-width: 100%;
   display: block;
 }
-
 /* =================
 Typography
 ================= */
@@ -34,6 +33,17 @@ h1 {
   margin: 0;
 }
 
+.image-full {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
+h3 {
+  color: #1792d2;
+}
+
 a {
   color: #1792d2;
 }
@@ -46,7 +56,6 @@ a:focus {
 strong {
   font-weight: 700;
 }
-
 /* h1 subtitle */
 .subtitle {
   font-weight: 700;
@@ -234,6 +243,7 @@ nav a:focus {
 .widget-title,
 .widget-recent-post-title {
   font-size: 1rem;
+  color: #143774;
 }
 
 .widget-title {
