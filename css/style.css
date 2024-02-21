@@ -114,6 +114,8 @@ header {
 
   aside {
     width: 25%;
+    min-width: 200px;
+    margin-left: 1em;
   }
 }
 
@@ -171,7 +173,7 @@ nav a:focus {
 .article-recent {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 7em;
 }
 
 .article-recent-main {
